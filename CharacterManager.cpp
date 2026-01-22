@@ -6,31 +6,31 @@ void UCharacterManager::SetupDelegates()
 {
 	/*State*/
 	OnCharacterStateChanged.AddDynamic(this, &UCharacterManager::BindOnCharacterStateChanged);
-
+	
 	// Health
 	OnHealthAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnHealthAttributeChanged);
-
+	
 	// Stamina
 	OnStaminaAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnStaminaAttributeChanged);
-
+	
 	// Energy
 	OnEnergyAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnEnergyAttributeChanged);
-
+	
 	// Shield
 	OnShieldAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnShieldAttributeChanged);
-
+	
 	// Output
 	OnOutputAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnOutputAttributeChanged);
-
+	
 	// Actuation
 	OnActuationAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnActuationAttributeChanged);
-
+	
 	// Integrity
 	OnIntegrityAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnIntegrityAttributeChanged);
-
+	
 	// Capacity
 	OnCapacityAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnCapacityAttributeChanged);
-
+	
 	// Regeneration
 	OnRegenerationAttributeChanged.AddDynamic(this, &UCharacterManager::BindOnRegenerationAttributeChanged);
 }
